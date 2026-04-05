@@ -78,7 +78,7 @@ export default function App() {
              <div className="p-1.5 border-2 border-yellow-400 rounded-xl">
                 <img src={logoUrl} alt="Magnetic" className="h-6 sm:h-8 w-auto object-contain" />
              </div>
-             <span className="font-black tracking-[0.2em] text-lg sm:text-xl uppercase italic">MAGNETIC</span>
+            <span className="font-black tracking-[0.2em] text-lg sm:text-xl uppercase italic text-white">MAGNETIC ADS</span>
           </div>
           
           <div className="hidden lg:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
@@ -200,7 +200,15 @@ function HomeView({ setTab, hero1, hero2, wa, waBtn }) {
 
         {/* WhatsApp & Contact */}
         <div className="pt-12 flex flex-col sm:flex-row items-center gap-10">
-          <a href={wa} target="_blank" rel="noopener noreferrer" className="inline-block transform hover:scale-110 transition-all active:scale-95">
+          <a href={wa} target="_blank" rel="noopener noreferrer">
+
+
+
+
+
+
+
+
              <img src={waBtn} alt="WhatsApp" className="h-16 md:h-22 w-auto drop-shadow-2xl" 
                onError={(e) => { e.target.onerror = null; e.target.src = 'https://via.placeholder.com/280x80/25D366/ffffff?text=WhatsApp+Business'; }}
              />
